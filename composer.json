@@ -1,0 +1,11 @@
+{
+    "require": {
+        "FortAwesome/Font-Awesome": "*",
+        "squizlabs/php_codesniffer": "*",
+        "wp-coding-standards/wpcs": "^0.10.0"
+    },
+    "scripts"    : {
+		"post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths C:\\Users\\Haitch\\AppData\\Roaming\\Composer\\vendor\\wp-coding-standards\\wpcs",
+		"post-update-cmd" : "\"vendor/bin/phpcs\" --config-set installed_paths C:\\Users\\Haitch\\AppData\\Roaming\\Composer\\vendor\\wp-coding-standards\\wpcs"
+	}
+}
