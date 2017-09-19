@@ -1,0 +1,236 @@
+{
+    "key": "group_54f5c52f7b5cd",
+    "title": "Description",
+    "fields": [
+        {
+            "key": "field_54f5c42aa147b",
+            "label": "Description Image",
+            "name": "description_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "new-car-article-images",
+            "library": "uploadedTo",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_54f5c59e887da",
+            "label": "Image Options",
+            "name": "image_option_description",
+            "type": "radio",
+            "instructions": "How do you wish the image to be displayed",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "plt": "left",
+                "prg": "Right",
+                "bgw": "Background",
+                "pbg": "Parallax",
+                "pfw": "Full Width",
+                "pno": "No Image"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "plt : left",
+            "layout": "horizontal",
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_550312f02776d",
+            "label": "Image Size",
+            "name": "image_size_description",
+            "type": "radio",
+            "instructions": "Type of dimentions of the image",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54f5c59e887da",
+                        "operator": "==",
+                        "value": "plt"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_54f5c59e887da",
+                        "operator": "==",
+                        "value": "prg"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "vwide": "Very Wide",
+                "wide": "Wide",
+                "square": "Square",
+                "thin": "Thin",
+                "vthin": "Very Thin"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "square",
+            "layout": "horizontal",
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_56c3312a9d607",
+            "label": "Text Alignment",
+            "name": "bg_text_alignment_description",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54f5c59e887da",
+                        "operator": "==",
+                        "value": "bgw"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Left": "Left",
+                "Right": "Right",
+                "Center": "Center"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "left",
+            "layout": "horizontal",
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_56c331d94b9d3",
+            "label": "Text Width",
+            "name": "bg_text_width_description",
+            "type": "number",
+            "instructions": "Using the 12 grid system, input how may block wide you wish the content to be.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_54f5c59e887da",
+                        "operator": "==",
+                        "value": "bgw"
+                    },
+                    {
+                        "field": "field_56c3312a9d607",
+                        "operator": "==",
+                        "value": "Left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_54f5c59e887da",
+                        "operator": "==",
+                        "value": "bgw"
+                    },
+                    {
+                        "field": "field_56c3312a9d607",
+                        "operator": "==",
+                        "value": "Center"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_54f5c59e887da",
+                        "operator": "==",
+                        "value": "bgw"
+                    },
+                    {
+                        "field": "field_56c3312a9d607",
+                        "operator": "==",
+                        "value": "Right"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 1,
+            "max": 12,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54c13ea343156",
+            "label": "Description",
+            "name": "description",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_new_car"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_new_van"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1471529728
+}

@@ -1,0 +1,23 @@
+{
+    "key": "group_5731e18769714",
+    "title": "Menu New Car Section SEO",
+    "fields": false,
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-new-car-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1479574627
+}

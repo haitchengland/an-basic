@@ -1,0 +1,372 @@
+{
+    "key": "group_573ddc73a8a2d",
+    "title": "Menu Used Car Sections",
+    "fields": [
+        {
+            "key": "field_573ddc73e66c6",
+            "label": "Style",
+            "name": "product_section_style",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "",
+                "Style1": "General - 3 across",
+                "Style2": "General - 2 across",
+                "Style3": "General - 2 across masonary",
+                "Style4": "General - 3 across masonary",
+                "Style5": "General - 4 across",
+                "Style6": "News - 3 across",
+                "Style7": "News - 4 across",
+                "Style8": "Wide Images - 2 across with hover effect",
+                "Style13": "Images - hover effect dark",
+                "Style14": "Images - hover effect light",
+                "Style9": "New Car - 3 across with red bottom tab",
+                "Style10": "General - 1 across wide image",
+                "Style11": "General - 1 across square image",
+                "Style12": "Testimonial",
+                "Style15": "Empty"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_573ddc73e6e94",
+            "label": "Small Title",
+            "name": "product_section_small_title",
+            "type": "text",
+            "instructions": "Used as a tag on some styles.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_573ddc73e7662",
+            "label": "Header Title",
+            "name": "product_section_header_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_573ddc73e7e37",
+            "label": "Header Sub Title",
+            "name": "product_section_header_sub_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_573ddc73e8608",
+            "label": "Header Image",
+            "name": "product_section_header_image",
+            "type": "image",
+            "instructions": "Image for the page header. Best dimensions 1900 x 200px. Try not to have the image higher than 200px, but it can accept upto 300px if needed.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_573ddc73e8dda",
+            "label": "Header Content",
+            "name": "product_section_header_content",
+            "type": "wysiwyg",
+            "instructions": "Content for top of the page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_573ddc73e9956",
+            "label": "Footer Content",
+            "name": "product_section_footer_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_573ddc73ea8f1",
+            "label": "Default Form",
+            "name": "product_default_form",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "",
+                "17": "Book a Test Drive",
+                "9": "Book a Service",
+                "18": "Finance Application",
+                "11": "Value My Car",
+                "22": "Quick Valuation",
+                "23": "Motability Enquiry",
+                "24": "Business Enquiry",
+                "25": "General Enquiry",
+                "26": "Used Car Part Exchange",
+                "20": "Request a Call Back",
+                "15": "Parts & Accessories Enquiry"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_57681af9737bc",
+            "label": "Enquiry Form",
+            "name": "product_enquiry_form_copy",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "",
+                "17": "Book a Test Drive",
+                "9": "Book a Service",
+                "18": "Finance Application",
+                "11": "Value My Car",
+                "22": "Quick Valuation",
+                "23": "Motability Enquiry",
+                "24": "Business Enquiry",
+                "25": "General Enquiry",
+                "26": "Used Car Part Exchange",
+                "20": "Request a Call Back",
+                "15": "Parts & Accessories Enquiry"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_57768df295e53",
+            "label": "Part Exchange Form",
+            "name": "product_part_exchange_form",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "",
+                "17": "Book a Test Drive",
+                "9": "Book a Service",
+                "18": "Finance Application",
+                "11": "Value My Car",
+                "22": "Quick Valuation",
+                "23": "Motability Enquiry",
+                "24": "Business Enquiry",
+                "25": "General Enquiry",
+                "26": "Used Car Part Exchange",
+                "20": "Request a Call Back",
+                "15": "Parts & Accessories Enquiry"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_573ddc73eb8cd",
+            "label": "Default Location",
+            "name": "product_default_location",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "",
+                "8205": "Citroen Sales Location",
+                "8208": "Citroen Parts Location",
+                "8212": "Citroen Service Location"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5784e880d3f90",
+            "label": "Show Offers from this Category",
+            "name": "product_section_offers_cat",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "new_offer_categories",
+            "field_type": "multi_select",
+            "allow_null": 1,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5784e89dd3f91",
+            "label": "Show Offers of Type",
+            "name": "product_section_offers_type",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "new_offer_types",
+            "field_type": "multi_select",
+            "allow_null": 1,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-used-car-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1471529391
+}

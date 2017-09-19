@@ -1,0 +1,1 @@
+<pre>Plugin autonerd-basic/templates/template-parts/plugin-test.php</pre>

@@ -1,0 +1,828 @@
+{
+    "key": "group_59b843f4eab4f",
+    "title": "Main - Header",
+    "fields": [
+        {
+            "key": "field_59b846090041f",
+            "label": "Header Style",
+            "name": "ancms_header_styles",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_59bae03547f8e",
+                    "label": "Side Header",
+                    "name": "ancms_side_header",
+                    "type": "true_false",
+                    "instructions": "Have the header menu on the left side\r\nside-header",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "disabled": 0,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_59b845120041c",
+                    "label": "Colour Scheme",
+                    "name": "ancms_colour_scheme",
+                    "type": "select",
+                    "instructions": "The transparent style does not follow this and will default to using the dark colour scheme.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "disabled": 0,
+                    "choices": {
+                        "light": "Light",
+                        "dark": "Dark"
+                    },
+                    "default_value": [
+                        "light"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_59bae69607461",
+                    "label": "Header Options",
+                    "name": "ancms_header_options",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_59bae03547f8e",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "disabled": 0,
+                    "layout": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_59bada6947f8b",
+                            "label": "Header Style",
+                            "name": "ancms_header_style",
+                            "type": "select",
+                            "instructions": "You can select more than one style",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "choices": {
+                                "solid-header": "White",
+                                "transparent-header": "Transparent",
+                                "transparent-header semi-transparent": "Semi Transparent",
+                                "transparent-header floating-header": "Floating (This only works with a slider currently)"
+                            },
+                            "default_value": [
+                                "solid-header"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 1,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_59badeef47f8d",
+                            "label": "Full Width Header",
+                            "name": "ancms_full_width_header",
+                            "type": "true_false",
+                            "instructions": "Logo and menu go from side to side\r\nfull-header",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "message": "",
+                            "default_value": 1,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_59bae41a2ea26",
+                    "label": "Side Header Options",
+                    "name": "ancms_side_header_options",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_59bae03547f8e",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "disabled": 0,
+                    "layout": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_59bae12f47f90",
+                            "label": "Side Header Position",
+                            "name": "ancms_side_header_position",
+                            "type": "true_false",
+                            "instructions": "side-header-right",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_59bae03547f8e",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Right",
+                            "ui_off_text": "Left"
+                        },
+                        {
+                            "key": "field_59bae07547f8f",
+                            "label": "Side Header Style",
+                            "name": "ancms_side_header_style",
+                            "type": "select",
+                            "instructions": "Can Select Multiple",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_59bae03547f8e",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "choices": {
+                                "open-header": "Open Side Menu With Trigger",
+                                "push-wrapper": "Push Content with Menu",
+                                "close-header-on-scroll": "Close Menu on Scroll",
+                                "side-header-open": "Load with Menu Open"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 1,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_59bd1433ca7fd",
+                    "label": "Header is Sticky",
+                    "name": "ancms_is_sticky",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_59bae03547f8e",
+                                "operator": "!=",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "disabled": 0,
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_59bd1432ca7fb",
+                    "label": "Sticky Header Options",
+                    "name": "ancms_sticky_options",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_59bae03547f8e",
+                                "operator": "!=",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_59bd1433ca7fd",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "disabled": 0,
+                    "layout": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_59bd1433ca7fe",
+                            "label": "Static Sticky",
+                            "name": "ancms_static_sticky",
+                            "type": "true_false",
+                            "instructions": "Static header will not change size from normal header",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_59bd1433ca7fd",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_59bd1527ca801",
+                            "label": "Colour Scheme",
+                            "name": "ancms_sticky_colour_scheme",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "choices": {
+                                "light": "Light",
+                                "dark": "Dark"
+                            },
+                            "default_value": [
+                                "light"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_59bd149dca800",
+                            "label": "Alternative Sticky Logo",
+                            "name": "ancms_sticky_logo",
+                            "type": "image",
+                            "instructions": "Good if you are going from a dark to light background",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "return_format": "id",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "jpg, jepg, png, gif"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_59bae5c70745e",
+                    "label": "Navigation Options",
+                    "name": "ancms_nav_options",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "disabled": 0,
+                    "layout": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_59b844020041b",
+                            "label": "Navigation Style",
+                            "name": "ancms_nav_style",
+                            "type": "select",
+                            "instructions": "You can select more than one style",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "choices": {
+                                "style-1": "Menu aligns right",
+                                "style-2": "Menu aligns beside the Logo",
+                                "style-3": "Menu Items with Theme Scheme Background Colors",
+                                "style-4": "Menu Items with Theme Scheme Border Colors",
+                                "style-5": "Menu Items with Large Icons on top of the Menu Name",
+                                "style-6": "Menu Items with a top animating border on Mouse Hover"
+                            },
+                            "default_value": [
+                                "style-1"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 1,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_59b845e80041e",
+                            "label": "Menu Arrows",
+                            "name": "ancms_menu_arrows",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 1,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_59badadc47f8c",
+                            "label": "Open Menu On Click",
+                            "name": "ancms_open_menu_on_click",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "message": "",
+                            "default_value": 1,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_59b8468900421",
+            "label": "Header Content",
+            "name": "ancms_header_content",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "disabled": 0,
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_59bd178cfef0d",
+                    "label": "Logos",
+                    "name": "ancms_logos_options",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "disabled": 0,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59b846e300423",
+                            "label": "Standard Logo",
+                            "name": "ancms_standard_logo",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "jpg, jepg, png, gif"
+                        },
+                        {
+                            "key": "field_59b8470b00424",
+                            "label": "Retina Logo",
+                            "name": "ancms_retina_logo",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "jpg, jepg, png, gif"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_59bd18e2fef15",
+                    "label": "Include Top Menu Bar",
+                    "name": "ancms_show_top_menu",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "",
+                                "operator": "!="
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "disabled": 0,
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_59bd17c5fef0f",
+                    "label": "Top Bar Options",
+                    "name": "ancms_top_bar_options",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_59bd18e2fef15",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "disabled": 0,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59bd17f9fef11",
+                            "label": "Colour Scheme",
+                            "name": "ancms_colour_scheme",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "choices": {
+                                "light": "Light",
+                                "dark": "Dark"
+                            },
+                            "default_value": [
+                                "light"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_59bd1818fef12",
+                            "label": "Content",
+                            "name": "ancms_top_bar_content",
+                            "type": "flexible_content",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "layouts": {
+                                "59bd186e37826": {
+                                    "key": "59bd186e37826",
+                                    "name": "top_bar_social_media",
+                                    "label": "Social Media",
+                                    "display": "block",
+                                    "sub_fields": [],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "59bd18b7fef14": {
+                                    "key": "59bd18b7fef14",
+                                    "name": "top_bar_menu",
+                                    "label": "Menu",
+                                    "display": "block",
+                                    "sub_fields": [],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            },
+                            "button_label": "Add Row",
+                            "min": "",
+                            "max": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_59bd19c61537c",
+                    "label": "Include Notifications",
+                    "name": "ancms_show_notifications",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "disabled": 0,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                },
+                {
+                    "key": "field_59bd19e21537d",
+                    "label": "Notification Options",
+                    "name": "ancms_notification_options",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_59bd19c61537c",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "disabled": 0,
+                    "layout": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_59bd1acd15382",
+                            "label": "Highlight Label",
+                            "name": "notification_label",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_59bd19e21537e",
+                            "label": "Highlight Colour",
+                            "name": "notification_label_colour",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "default_value": ""
+                        },
+                        {
+                            "key": "field_59bd1aa515380",
+                            "label": "Notifications",
+                            "name": "ancms_notifications",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "disabled": 0,
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "Add Notification",
+                            "sub_fields": [
+                                {
+                                    "key": "field_59bd1ac315381",
+                                    "label": "Notification Text",
+                                    "name": "notification_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "disabled": 0,
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_59bd1b4c15383",
+                                    "label": "Notification Url",
+                                    "name": "notification_url",
+                                    "type": "url",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "disabled": 0,
+                                    "default_value": "",
+                                    "placeholder": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "ancms-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1505575942
+}

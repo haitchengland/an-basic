@@ -12,10 +12,11 @@
 /**
  * The core plugin class
  *
- * @package 	ANCMS
- * @author 		Helen England
+ * @package     ANCMS
+ * @author      Helen England
  */
 class Autonerd {
+
 	/**
 	 * [$instance description]
 	 *
@@ -39,8 +40,9 @@ class Autonerd {
 		add_filter( 'the_content', array( $this, 'display_twitter_follower_count' ) );
 	}
 
+
 	/**
-	 * [get_instance description]
+	 * [get_twitter_follower_count description]
 	 *
 	 * @return [type] [description]
 	 */
@@ -74,12 +76,13 @@ class Autonerd {
 	/**
 	 * [display_twitter_follower_count description]
 	 *
-	 * @param  [type] $content [description].
-	 * @return [type]          [description]
+	 * @param  array $content   testing description.
+	 * @return string           testing description
 	 */
 	public function display_twitter_follower_count( $content ) {
 
-		if ( ! is_single() ) {;
+		if ( ! is_single() ) {
+			
 		} {
 			return $content;
 		}
@@ -99,4 +102,3 @@ class Autonerd {
 		return $content;
 	}
 }
-

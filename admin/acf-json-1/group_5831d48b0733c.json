@@ -1,0 +1,24 @@
+{
+    "key": "group_5831d48b0733c",
+    "title": "Menu About Us Jumps (copy)",
+    "fields": false,
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-about-us-settings"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "is_acf_component": 1,
+    "modified": 1479660683
+}

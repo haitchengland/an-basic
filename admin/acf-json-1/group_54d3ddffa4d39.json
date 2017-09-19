@@ -1,0 +1,80 @@
+{
+    "key": "group_54d3ddffa4d39",
+    "title": "Video",
+    "fields": [
+        {
+            "key": "field_54d3de0a6b9d2",
+            "label": "You Tube Video Code",
+            "name": "you_tube_video_Code",
+            "type": "text",
+            "instructions": "Please add the code from the end of the youtube video that you would like to include",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "https:\/\/www.youtube.com\/watch?v=",
+            "append": "",
+            "maxlength": 15,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54d40da6842c2",
+            "label": "Add YouTube review [Auto]",
+            "name": "add_youtube_review",
+            "type": "checkbox",
+            "instructions": "If you do not have a video and would like to add a relevant video from YouTube, check the box.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Display Relevent Youtube Video": "Display Relevent Youtube Video"
+            },
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_new_car"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_new_van"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 12,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1471529739
+}

@@ -1,0 +1,426 @@
+{
+    "key": "group_5721e2a8bac85",
+    "title": "Menu General - Call to Actions",
+    "fields": [
+        {
+            "key": "field_57335d5aa107a",
+            "label": "Global Footer Jumps",
+            "name": "cta_footer_global",
+            "type": "checkbox",
+            "instructions": "This will be the default Footer Jumps",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Finance_This_Car": "Finance_This_Car",
+                "Motability": "Motability",
+                "Business_Services": "Business_Services",
+                "Part_Exchange?": "Part_Exchange?",
+                "Book_Your_MOT": "Book_Your_MOT",
+                "Black_Box_Telematics_Citroen": "Black_Box_Telematics_Citroen",
+                "get-directions": "get-directions",
+                "xmas_opening_hours": "xmas_opening_hours",
+                "Summer_Check_Air_Con-Working": "Summer_Check_Air_Con-Working",
+                "fixed_price_repairs": "fixed_price_repairs",
+                "recruitment": "recruitment",
+                "secure_ssl": "secure_ssl",
+                "simplydrive": "simplydrive",
+                "engine_decontamination_treatment": "engine_decontamination_treatment",
+                "whats_my_car_worth": "whats_my_car_worth",
+                "download_brochure": "download_brochure",
+                "meet_the_team": "meet_the_team",
+                "live_chat_jump": "live_chat_jump",
+                "finance_options_explained": "finance_options_explained",
+                "testimonials": "testimonials"
+            },
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5721ecdc1682b",
+            "label": "Footer Call to Actions",
+            "name": "cta_footer_cta",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5721ecfb1682c",
+            "min": "",
+            "max": "",
+            "layout": "row",
+            "button_label": "Add Jump",
+            "sub_fields": [
+                {
+                    "key": "field_5721ecfb1682c",
+                    "label": "Admin Title",
+                    "name": "cta_footer_admin_title",
+                    "type": "text",
+                    "instructions": "Please make this unique",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_57335ac302a2e",
+                    "label": "Type of Jump",
+                    "name": "cta_footer_type",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "std": "Standard",
+                        "frm": "Form",
+                        "html": "Custom html"
+                    },
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "default_value": "std",
+                    "layout": "horizontal",
+                    "allow_null": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5721edca16831",
+                    "label": "Background Image",
+                    "name": "cta_footer_bg_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5721ee4016832",
+                    "label": "Background Colour",
+                    "name": "cta_footer_bg_colour",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#222"
+                },
+                {
+                    "key": "field_5733697a070f8",
+                    "label": "Select Form",
+                    "name": "cta_footer_form",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57335ac302a2e",
+                                "operator": "==",
+                                "value": "frm"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "0": "",
+                        "17": "Book a Test Drive",
+                        "9": "Book a Service",
+                        "18": "Finance Application",
+                        "11": "Value My Car",
+                        "22": "Quick Valuation",
+                        "23": "Motability Enquiry",
+                        "24": "Business Enquiry",
+                        "25": "General Enquiry",
+                        "26": "Used Car Part Exchange",
+                        "20": "Request a Call Back",
+                        "15": "Parts & Accessories Enquiry"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_57335b0602a2f",
+                    "label": "Custom Html",
+                    "name": "cta_footer_custom_html",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57335ac302a2e",
+                                "operator": "==",
+                                "value": "html"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1
+                },
+                {
+                    "key": "field_5721ed281682d",
+                    "label": "Main Title",
+                    "name": "cta_footer_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57335ac302a2e",
+                                "operator": "==",
+                                "value": "std"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_57335ac302a2e",
+                                "operator": "==",
+                                "value": "frm"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_5721ed461682e",
+                    "label": "Main Description",
+                    "name": "cta_footer_desc",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57335ac302a2e",
+                                "operator": "==",
+                                "value": "std"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_57335ac302a2e",
+                                "operator": "==",
+                                "value": "frm"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": 300,
+                    "rows": 3,
+                    "new_lines": "br",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_5721f7c0d252f",
+                    "label": "Link Address",
+                    "name": "cta_footer_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57335ac302a2e",
+                                "operator": "==",
+                                "value": "std"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5721edaa16830",
+                    "label": "Button Text",
+                    "name": "cta_footer_button_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57335ac302a2e",
+                                "operator": "==",
+                                "value": "std"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 50,
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_5721eec816833",
+                    "label": "Text Colour",
+                    "name": "cta_footer_text_colour",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57335ac302a2e",
+                                "operator": "==",
+                                "value": "std"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_57335ac302a2e",
+                                "operator": "==",
+                                "value": "frm"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#ffffff"
+                },
+                {
+                    "key": "field_5721ef0416834",
+                    "label": "Description Colour",
+                    "name": "cta_footer_desc_colour",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57335ac302a2e",
+                                "operator": "==",
+                                "value": "std"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_57335ac302a2e",
+                                "operator": "==",
+                                "value": "frm"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#ffffff"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-call-to-actions"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1471529211
+}

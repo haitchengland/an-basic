@@ -1,0 +1,810 @@
+{
+    "key": "group_5830832916248",
+    "title": "Settings New Car",
+    "fields": [
+        {
+            "key": "field_58309d739c08c",
+            "label": "SEO Settings",
+            "name": "ancms_new_car_seo_settings",
+            "type": "component_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "field_group_id": "group_58309ca2b81d9",
+            "min": 1,
+            "max": 1,
+            "layout": "block",
+            "button_label": "Add Row",
+            "appearances": [
+                "hide-outer-boundary"
+            ],
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "ID": 872,
+                    "key": "field_58309ce9ea170",
+                    "label": "SEO Meta Title",
+                    "name": "ancms_seo_title",
+                    "prefix": "acf",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": 871,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "ancms_seo_title",
+                    "_input": "",
+                    "_valid": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "ID": 873,
+                    "key": "field_58309d17ea171",
+                    "label": "SEO Meta Description",
+                    "name": "ancms_seo_meta_description",
+                    "prefix": "acf",
+                    "type": "textarea",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": 871,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "ancms_seo_meta_description",
+                    "_input": "",
+                    "_valid": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5830841465980",
+            "label": "SEO Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5731e187896bf",
+            "label": "SEO Meta Title",
+            "name": "sh_new_car_seo_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5731e1878a278",
+            "label": "SEO Meta Description",
+            "name": "sh_new_car_seo_meta_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5830846165982",
+            "label": "Styles",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5730cb3d89585",
+            "label": "Style",
+            "name": "sh_new_car_section_style",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "",
+                "Style1": "General - 3 across",
+                "Style2": "General - 2 across",
+                "Style3": "General - 2 across masonary",
+                "Style4": "General - 3 across masonary",
+                "Style5": "General - 4 across",
+                "Style6": "News - 3 across",
+                "Style7": "News - 4 across",
+                "Style8": "Wide Images - 2 across with hover effect",
+                "Style13": "Images - hover effect dark",
+                "Style14": "Images - hover effect light",
+                "Style9": "New Car - 3 across with red bottom tab",
+                "Style10": "General - 1 across wide image",
+                "Style11": "General - 1 across square image",
+                "Style12": "Testimonial",
+                "Style15": "Recruitment",
+                "Style16": "Our Team",
+                "Style17": "Brochures",
+                "contact": "Contact Us"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5730cb3d8a530",
+            "label": "Small Title",
+            "name": "sh_new_car_section_small_title",
+            "type": "text",
+            "instructions": "Used as a tag on some styles.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5730cb3d8b4cc",
+            "label": "Header Title",
+            "name": "sh_new_car_section_header_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5730cb3d8c499",
+            "label": "Header Sub Title",
+            "name": "sh_new_car_section_header_sub_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5730cb3d8d025",
+            "label": "Header Image",
+            "name": "sh_new_car_section_header_image",
+            "type": "image",
+            "instructions": "Image for the page header. Best dimensions 1900 x 200px. Try not to have the image higher than 200px, but it can accept upto 300px if needed.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5730cb3d8dfd6",
+            "label": "Header Content",
+            "name": "sh_new_car_section_header_content",
+            "type": "wysiwyg",
+            "instructions": "Content for top of the page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_5730cb3d8ef67",
+            "label": "Footer Content",
+            "name": "sh_new_car_section_footer_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_5730cb3d8ff1a",
+            "label": "Default Form",
+            "name": "sh_new_car_default_form",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "",
+                "17": "Book a Test Drive",
+                "9": "Book a Service",
+                "18": "Finance Application",
+                "11": "Value My Car",
+                "22": "Quick Valuation",
+                "23": "Motability Enquiry",
+                "24": "Business Enquiry",
+                "25": "General Enquiry",
+                "26": "Used Car Part Exchange",
+                "20": "Request a Call Back",
+                "15": "Parts & Accessories Enquiry"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5730d1ee3bb80",
+            "label": "Default Location",
+            "name": "sh_new_car_default_location",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "0": "",
+                "8205": "Citroen Sales Location",
+                "8208": "Citroen Parts Location",
+                "8212": "Citroen Service Location"
+            },
+            "default_value": [],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5787bd40590f4",
+            "label": "Book a Test Drive Form",
+            "name": "sh_new_car_book_a_test_drive_form",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "",
+                "17": "Book a Test Drive",
+                "9": "Book a Service",
+                "18": "Finance Application",
+                "11": "Value My Car",
+                "22": "Quick Valuation",
+                "23": "Motability Enquiry",
+                "24": "Business Enquiry",
+                "25": "General Enquiry",
+                "26": "Used Car Part Exchange",
+                "20": "Request a Call Back",
+                "15": "Parts & Accessories Enquiry"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5787bd95590f5",
+            "label": "Apply for Finance Page",
+            "name": "sh_new_car_apply_for_finance_page",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "sh_finance"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5787bded590f6",
+            "label": "Enquire About Form",
+            "name": "sh_new_car_enquire_about_form",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "",
+                "17": "Book a Test Drive",
+                "9": "Book a Service",
+                "18": "Finance Application",
+                "11": "Value My Car",
+                "22": "Quick Valuation",
+                "23": "Motability Enquiry",
+                "24": "Business Enquiry",
+                "25": "General Enquiry",
+                "26": "Used Car Part Exchange",
+                "20": "Request a Call Back",
+                "15": "Parts & Accessories Enquiry"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5784e6a6a0ef4",
+            "label": "Show Offers from this Category",
+            "name": "sh_new_car_section_offers_cat",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "new_offer_categories",
+            "field_type": "multi_select",
+            "allow_null": 1,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5784e6b3a0ef8",
+            "label": "Show Offers of Type",
+            "name": "sh_new_car_section_offers_type",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "new_offer_types",
+            "field_type": "multi_select",
+            "allow_null": 1,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_58308ddd8fd72",
+            "label": "",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 1
+        },
+        {
+            "key": "field_58308e450d0ea",
+            "label": "test",
+            "name": "test",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5733863226121",
+            "label": "Top Jumps",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 1
+        },
+        {
+            "key": "field_5731bcbfe444e",
+            "label": "Position",
+            "name": "sh_new_car_cta_position",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "sh_new_car_cta_bottom": "Bottom",
+                "sh_new_car_cta_right": "Right Sidebar",
+                "sh_new_car_cta_left": "Left Sidebar"
+            },
+            "default_value": [
+                "sh_new_car_cta_bottom"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5731bcbfe4e48",
+            "label": "Custom html",
+            "name": "sh_new_car_custom_html_check",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_5731bcbfe5dd5",
+            "label": "Jumps",
+            "name": "sh_new_car_cta_jumps",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5731bcc032e44",
+            "min": "",
+            "max": 3,
+            "layout": "block",
+            "button_label": "Add Jump",
+            "sub_fields": [
+                {
+                    "key": "field_5731bcc032e44",
+                    "label": "Title",
+                    "name": "sh_new_car_cta_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_5731bcc033614",
+                    "label": "URL",
+                    "name": "sh_new_car_cta_url",
+                    "type": "text",
+                    "instructions": "Use either full url: http:\/\/www.example.com\/test\r\nor relative: test",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_5731bcc034213",
+                    "label": "Icon",
+                    "name": "sh_new_car_cta_icon",
+                    "type": "text",
+                    "instructions": "Examples:\r\nfont awsome: \"fa-car\"\r\ncustom icomoon icon: \"icon-fuel\"",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "fa-chevron-right",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_5731bcbfe6d71",
+            "label": "Custom html",
+            "name": "sh_new_car_cta_jumps_custom_html",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_5733868a26122",
+            "label": "Footer Jumps",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5733873d9d0f0",
+            "label": "Footer Jumps",
+            "name": "sh_new_car_cta_footer",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Finance_This_Car": "Finance_This_Car",
+                "Motability": "Motability",
+                "Business_Services": "Business_Services",
+                "Part_Exchange?": "Part_Exchange?",
+                "Book_Your_MOT": "Book_Your_MOT",
+                "Black_Box_Telematics_Citroen": "Black_Box_Telematics_Citroen",
+                "get-directions": "get-directions",
+                "xmas_opening_hours": "xmas_opening_hours",
+                "Summer_Check_Air_Con-Working": "Summer_Check_Air_Con-Working",
+                "fixed_price_repairs": "fixed_price_repairs",
+                "recruitment": "recruitment",
+                "secure_ssl": "secure_ssl",
+                "simplydrive": "simplydrive",
+                "engine_decontamination_treatment": "engine_decontamination_treatment",
+                "whats_my_car_worth": "whats_my_car_worth",
+                "download_brochure": "download_brochure",
+                "meet_the_team": "meet_the_team",
+                "live_chat_jump": "live_chat_jump",
+                "finance_options_explained": "finance_options_explained",
+                "testimonials": "testimonials"
+            },
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 0,
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-new-car-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "is_acf_component": 0,
+    "modified": 1479581200
+}

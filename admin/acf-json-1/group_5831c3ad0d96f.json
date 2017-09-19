@@ -1,0 +1,61 @@
+{
+    "key": "group_5831c3ad0d96f",
+    "title": "Section Terms & Conditions",
+    "fields": [
+        {
+            "key": "field_5831c3ad1ee9d",
+            "label": "Default Terms and Conditions",
+            "name": "ancms_section_terms_and_conditions",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_5831c3ad1f66a",
+            "label": "Model And Specification Terms and Conditions",
+            "name": "ancms_section_model_terms_and_conditions",
+            "type": "wysiwyg",
+            "instructions": "This is the text that will be displayed below the model and specification description tabs",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-offer-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "is_acf_component": 1,
+    "modified": 1479656821
+}

@@ -1,0 +1,140 @@
+{
+    "key": "group_5783e0b76f263",
+    "title": "Shortcodes",
+    "fields": [
+        {
+            "key": "field_57aca3f514db2",
+            "label": "Home Page Shortcode Manual",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<a href=\"http:\/\/www.autonerd.co.uk\/wp-content\/themes\/autonerd-base\/shortcodes.pdf\" target=\"_blank\" >Home page shortcode manual<\/a>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5783e252a5544",
+            "label": "Display Products",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5783e0d685c80",
+            "label": "Product Shortcode",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "To display a selection of products in a list. Use the any combination of the following options \r\n\r\n[shcms_featured_product\r\n<p style=\"padding-left: 30px;\">ids=\"product id\/s comma separated\"\r\ncategory=\"comma separated list of category slugs\"\r\nfeatured=\"yes or no\"\r\nper_page=\"the amount of products you want to display\"\r\norderby=\"date\"\r\norder=\"desc or asc\"\r\ngrid= 'false' or 'true'\r\n]\r\n\r\n<strong>Examples:<\/strong>\r\nDisplay products with IDs by data order: <strong>[shcms_featured_product ids=\"18408,18405,18259\" orderby=\"date\" order=\"desc\"]<\/strong>\r\nDisplay all featured products: <strong>[shcms_featured_product featured=\"yes\" orderby=\"date\" order=\"desc\" ]<\/strong>\r\nDisplay 4 products from the ds3 (slug) catagory: <strong>[shcms_featured_product category=\"ds3\" per_page=\"4\"]<\/strong>\r\nDisplay 9 products from the c1 and c3 catagory: <strong>[shcms_featured_product category=\"c1,c3\" per_page=\"9\"]<\/strong>\r\n\r\nIf you want to display list in a grid add grid=\"true\"\r\nDisplay all featured products: <strong>[shcms_featured_product featured=\"yes\" orderby=\"date\" order=\"desc\" grid=\"true\" ]<\/strong>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5783e268a5545",
+            "label": "Display Offers",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5783e311a5547",
+            "label": "Offer Shortcode",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "To display a selection of offers in a 3 across grid. Use the any combination of the following options \r\n\r\n[shcms_featured_offers\r\n<p style=\"padding-left: 30px;\">ids=\"offer id\/s comma separated\"\r\noffer_cat=\"offer_category slug\"\r\noffer_type=\"offer_type slug\"\r\nmodel=\"comma separated list of model slugs\"\r\nper_page=\"the amount of products you want to display\"\r\n<\/p>\r\n]\r\n\r\n<strong>Examples:<\/strong>\r\nDisplay  3 offers from ex-demo (slug) type: <strong>[shcms_featured_offers offer_type=\"ex-demonstator\" per_page=\"3\"\u00a0]<\/strong>\r\nDisplay offers with IDs:  <strong>[shcms_featured_offers ids=\"13511,13517,13507\"\u00a0]<\/strong>\r\nDisplay 3 offers from the motability-offers (slug) catagory: <strong>[shcms_featured_offers offer_cat=\"motability-offers\" per_page=\"3\"\u00a0]<\/strong>\r\nDisplay 6 offers which are ds3 (slug) model: <strong>[shcms_featured_offers model=\"ds3\" per_page=\"6\"\u00a0]<\/strong>\r\nDisplay 3 offers combined: <strong>[shcms_featured_offers model=\"ds3\" offer_cat=\"business-offers\" offer_type=\"business-contract-hire\"  per_page=\"3\"\u00a0]<\/strong>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5783e271a5546",
+            "label": "Display Testimonials Carosel",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5783e326a5548",
+            "label": "Testimonial Shortcode",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "To display a selection of testimonials in a carosel. Use the any combination of the following options \r\n\r\n[shcms_testimonials_slider\r\n<p style=\"padding-left: 30px;\">testimonial_ids=\"testimonial id\/s comma separated\"\r\nfeatured=true or false\r\nmodel_slug=\"model slug\"\r\namount=\"the amount of testimonials you want to display\"\r\n<\/p>\r\n]\r\n\r\n<strong>Examples:<\/strong>\r\nDisplay 4 featured that have a link to model c1 (slug): <strong>[shcms_testimonials_slider amount=\"4\" featured=true model_slug='c1']<\/strong>\r\nDisplay 6 testimonials with linked model c1 (slug):  <strong>[shcms_testimonials_slider amount=\"6\" model_slug=\"c1\" ]<\/strong>\r\nDisplay 4 featured testimonials: <strong>[shcms_testimonials_slider amount=\"4\" featured=true]<\/strong>\r\nDisplay testimonials with IDs: <strong>[shcms_testimonials_slider amount=\"4\" testimonial_ids=\"8192,11963\" ]<\/strong>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-shortcodes"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1471529483
+}

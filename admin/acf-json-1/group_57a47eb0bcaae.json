@@ -1,0 +1,189 @@
+{
+    "key": "group_57a47eb0bcaae",
+    "title": "Useful Instructions and Help",
+    "fields": [
+        {
+            "key": "field_57a47eb0d54b1",
+            "label": "Used Car Urls",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57a47eb0d554f",
+            "label": "URL Structure",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "http:\/\/www.site.com\/branch\/used-cars\/?varible=value&varible2=value2\r\n<i>First varible starts with a ? and additional varible starts with a &<\/i>\r\n\r\n<strong>examples make and model<\/strong>\r\n?make=citroen\r\n?make=citroen&model=c1 (model needs the make to work correctly)\r\nboth make and model need to follow the slug from the taxonomy page (wp-admin\/edit-tags.php?taxonomy=vehical_makes_and_models)\r\n\r\n<strong>examples bodystyle<\/strong>\r\n?bodystyle=van\r\n?bodystyle=hatchback,estate,saloon,coupe,convertible,mpv,suv (for more than one body style comma separate)\r\n\r\n<strong>examples other<\/strong>\r\n?mileage=5000 (displays mileage up to 5000)\r\nacceptable values for mileage are 5000, 10000, 20000, 30000, 40000, 50000, 75000, 100000\r\n\r\n?age=2 (displays vehicles up to 2 years old)\r\nacceptable values for age are 1, 2, 3, 4, 5, over (over is for anything over 5 years old)\r\n\r\nThese variables can be used to gether in any order\r\nhttp:\/\/www.site.com\/branch\/used-cars\/?make=citroen&model=grand-c4-picasso&mileage=10000&age=2&bodystyle=mpv",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_57a47f3b22c69",
+            "label": "Offer Urls",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57a47f4b22c6a",
+            "label": "URL Structure",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "To display a selection of products in a 3 across grid. Use the any combination of the following options \r\n\r\n[shcms_featured_product\r\n<p style=\"padding-left: 30px;\">ids=\"product id\/s comma separated\"\r\ncategory=\"comma separated list of category slugs\"\r\nfeatured=\"yes or no\"\r\nper_page=\"the amount of products you want to display\"\r\norderby=\"date\"\r\norder=\"desc or asc\"<\/p>\r\n]\r\n\r\n<strong>Examples:<\/strong>\r\nDisplay products with IDs by data order: <strong>[shcms_featured_product ids=\"18408,18405,18259\" orderby=\"date\" order=\"desc\"]<\/strong>\r\nDisplay all featured products: <strong>[shcms_featured_product featured=\"yes\" orderby=\"date\" order=\"desc\" ]<\/strong>\r\nDisplay 4 products from the ds3 (slug) catagory: <strong>[shcms_featured_product category=\"ds3\" per_page=\"4\"]<\/strong>\r\nDisplay 9 products from the c1 and c3 catagory: <strong>[shcms_featured_product category=\"c1,c3\" per_page=\"9\"]<\/strong>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_57a47eb0d55db",
+            "label": "API info",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57a47eb0d5663",
+            "label": "Google API Information",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Account: haitch.england@gmail.com\r\nApp: charters citroen\r\nServer Key set to server IP: 139.59.172.32 (used for youtube i believe)\r\nBrowser Key set to: all the site urls (used for direction map in contact page)\r\nhttps:\/\/console.developers.google.com\/apis\/library?project=charters-citroen",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_57a47eb0d56f9",
+            "label": "Map Info",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57a47eb0d5793",
+            "label": "General Info",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "create map code https:\/\/developers.google.com\/maps\/documentation\/embed\/start",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_57a488cecf0cc",
+            "label": "Code",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_57a488dacf0cd",
+            "label": "Code Information",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Import setting\r\nHave hardcoded DS branch import ID (19750607) to function check_branch_import_number($dealer_id, $model) line 60 of shcms-wp-import-scripts.php in plugin folder\r\n\r\ndebug wordpress\r\nglobal $wp_query;\r\n $queried_object = get_queried_object();\r\n echo '<pre>';\r\nprint_r( $wp_query->query_vars );\r\n echo '<\/pre>';\r\n\r\nHtaccess info http:\/\/htaccesscheatsheet.com\/\r\n\r\nin the function get_vehical_filters( $load, $child_of, $id, $class)\r\nI have added a list of IDs that are removed from the drop down. If you need to add back or take more out check function.php ~line 449",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-shortcodes"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1472752780
+}

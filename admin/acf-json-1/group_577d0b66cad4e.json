@@ -1,0 +1,40 @@
+{
+    "key": "group_577d0b66cad4e",
+    "title": "Lock Post",
+    "fields": [
+        {
+            "key": "field_577d0b826bf0e",
+            "label": "Lock Post",
+            "name": "sh_lock_post",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Stops post being deleted",
+            "default_value": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_new_offer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1471529061
+}

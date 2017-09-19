@@ -1,0 +1,459 @@
+{
+    "key": "group_54f5c70f07be8",
+    "title": "Contact Us",
+    "fields": [
+        {
+            "key": "field_56cdcfe27b26e",
+            "label": "Manual Entry",
+            "name": "form_manual_entry",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Yes": "Yes",
+                "No": "No"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "No",
+            "layout": "horizontal",
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_56cdc9eccd967",
+            "label": "Select a Form",
+            "name": "select_a_form",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56cdcfe27b26e",
+                        "operator": "==",
+                        "value": "No"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "",
+                "17": "Book a Test Drive",
+                "9": "Book a Service",
+                "18": "Finance Application",
+                "11": "Value My Car",
+                "22": "Quick Valuation",
+                "23": "Motability Enquiry",
+                "24": "Business Enquiry",
+                "25": "General Enquiry",
+                "26": "Used Car Part Exchange",
+                "20": "Request a Call Back",
+                "15": "Parts & Accessories Enquiry"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5730a68a508b3",
+            "label": "Select Department",
+            "name": "select_department",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56cdcfe27b26e",
+                        "operator": "==",
+                        "value": "No"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "0": "",
+                "8205": "Citroen Sales Location",
+                "8208": "Citroen Parts Location",
+                "8212": "Citroen Service Location"
+            },
+            "default_value": [],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_54f5c90e597cb",
+            "label": "Contact Us Image",
+            "name": "contact_us_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56cdcfe27b26e",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "new-car-article-images",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_54f84d25ff1f2",
+            "label": "Image Options",
+            "name": "image_option_contact_us",
+            "type": "radio",
+            "instructions": "How do you wish the image to be displayed",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56cdcfe27b26e",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "plt": "left",
+                "prg": "Right",
+                "bgw": "Background",
+                "pbg": "Parallax",
+                "pfw": "Full Width",
+                "pno": "No Image"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "plt : left",
+            "layout": "horizontal",
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_55032c9288b30",
+            "label": "Image Size",
+            "name": "image_size_contact_us",
+            "type": "radio",
+            "instructions": "Type of dimentions of the image",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56cdcfe27b26e",
+                        "operator": "==",
+                        "value": "Yes"
+                    },
+                    {
+                        "field": "field_54f84d25ff1f2",
+                        "operator": "==",
+                        "value": "plt"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_56cdcfe27b26e",
+                        "operator": "==",
+                        "value": "Yes"
+                    },
+                    {
+                        "field": "field_54f84d25ff1f2",
+                        "operator": "==",
+                        "value": "prg"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "vwide": "Very Wide",
+                "wide": "Wide",
+                "square": "Square",
+                "thin": "Thin",
+                "vthin": "Very Thin"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "square",
+            "layout": "horizontal",
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_56c35bae9cfff",
+            "label": "Text Alignment",
+            "name": "bg_text_alignment_contact_us",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56cdcfe27b26e",
+                        "operator": "==",
+                        "value": "Yes"
+                    },
+                    {
+                        "field": "field_54f84d25ff1f2",
+                        "operator": "==",
+                        "value": "bgw"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Left": "Left",
+                "Right": "Right",
+                "Center": "Center"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "left",
+            "layout": "horizontal",
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_56c35bb79d001",
+            "label": "Text Width",
+            "name": "bg_text_width_contact_us",
+            "type": "number",
+            "instructions": "Using the 12 grid system, input how may block wide you wish the content to be.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56cdcfe27b26e",
+                        "operator": "==",
+                        "value": "Yes"
+                    },
+                    {
+                        "field": "field_54f84d25ff1f2",
+                        "operator": "==",
+                        "value": "bgw"
+                    },
+                    {
+                        "field": "field_56c35bae9cfff",
+                        "operator": "==",
+                        "value": "Left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_56cdcfe27b26e",
+                        "operator": "==",
+                        "value": "Yes"
+                    },
+                    {
+                        "field": "field_54f84d25ff1f2",
+                        "operator": "==",
+                        "value": "bgw"
+                    },
+                    {
+                        "field": "field_56c35bae9cfff",
+                        "operator": "==",
+                        "value": "Right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_56cdcfe27b26e",
+                        "operator": "==",
+                        "value": "Yes"
+                    },
+                    {
+                        "field": "field_54f84d25ff1f2",
+                        "operator": "==",
+                        "value": "bgw"
+                    },
+                    {
+                        "field": "field_56c35bae9cfff",
+                        "operator": "==",
+                        "value": "Center"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 1,
+            "max": 12,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54c13f4c4315b",
+            "label": "Contact Us",
+            "name": "contact_us",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56cdcfe27b26e",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_new_car"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_new_van"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_business"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_aftersale"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_motability"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_news"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_about"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_finance"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_new_offer"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 50,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1471529770
+}

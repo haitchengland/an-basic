@@ -1,0 +1,481 @@
+/**
+ * Finance calculator form styles
+ *
+ * @package AutoNerdFramework
+ * @subpackage AutoNerdTemplate
+ * 
+ * File Version 1.0.0
+ */
+
+.user-select-none {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+
+
+/**************************************************
+*  ---------------------------------------------  *
+*  |              Typeography                  |  *
+*  ---------------------------------------------  *
+**************************************************/
+	
+	#finance-calc h2 {
+		font-size: 1.5em;
+	    font-weight: bold;
+	    margin: 0;
+	}
+
+	#finance-calc h5 {
+		font-size: 1em;
+	    font-weight: bold;
+	    margin: 20px 0 5px 0;
+	}
+
+	#finance-calc .finance-calc-results h3 {
+		font-size: 1.5em;
+		font-weight: bold;
+		margin: 0 0 5px 10px;
+	}
+
+	#finance-calc .finance-calc-results h5 {
+		font-size: 1em;
+		margin: 0px 0 5px 0;
+	}
+
+
+/**************************************************
+*  ---------------------------------------------  *
+*  |                 Layout                    |  *
+*  ---------------------------------------------  *
+**************************************************/
+
+	.finance-calc {
+		padding-top: 20px;
+	}
+
+	.finance-calc-area,
+	.finance-calc-results {
+		padding: 25px;
+	}
+
+	.finance-calc-area {
+		background: #fff;
+	}
+
+	.finance-calc-results {
+		background: #444;
+	}
+
+	/* Arrow pointing to results */
+	.finance-calc-area:after {
+	    content: "";
+	    position: absolute;
+	    right: -13px;
+	    top: 40px;
+	    width: 0;
+	    height: 0;
+	    border-top: 14px solid transparent;
+	    border-bottom: 14px solid transparent;
+	    border-left: 14px solid #ffffff;
+	    z-index: 20;
+	}
+
+	.calc-area {
+		width: 100%;
+	}
+
+
+/**************************************************
+*  ---------------------------------------------  *
+*  |                 Inputs                    |  *
+*  ---------------------------------------------  *
+**************************************************/
+
+	.calc-area input {
+		width: 80px;
+		background: #f2f5fb;
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+
+	.calc-area input#loanterm {
+		width: 44px;
+	}
+
+	.calc-area .pound {
+		margin-left:10px;
+	}
+
+	.calc-area .pound,
+	.calc-area input {
+		line-height: 26px;
+		font-size: 26px;
+		color: #444;
+		padding: 2px;
+	    text-align: center;
+	}
+
+	.calc-area .month {
+	    font-size:16px;
+		margin-right: 10px;
+	}
+
+/**************************************************
+*  ---------------------------------------------  *
+*  |                 Sliders                   |  *
+*  ---------------------------------------------  *
+**************************************************/
+
+	.calc-area .ui-widget-content {
+		height: 8px;
+		width: 69%;
+		margin: 13px 10px;
+		border-radius: 4px;
+		border: 1px solid #969696;
+		background: #969696;
+		display:none;
+	}
+	
+	.calc-area .ui-slider-range-max {
+		background: #f1f1f1;
+	}
+
+	.ui-slider {
+		position: relative;
+		text-align: left;
+	}
+
+	.ui-slider .ui-slider-handle {
+		position: absolute;
+		z-index: 2;
+		width: 1.8em;
+		height: 1.8em;
+		cursor: auto;
+		background: #dc002e;
+		/*border-radius: 50%; */
+	}
+
+	.ui-slider .ui-slider-range {
+		position: absolute;
+		z-index: 1;
+		font-size: .7em;
+		display: block;
+		border: 0;
+		background-position: 0 0;
+	}
+
+	.ui-slider-horizontal {
+		height: .8em;
+	}
+
+	.ui-slider-horizontal .ui-slider-handle {
+		top: -.7em;
+		margin-left: -.6em;
+	}
+
+	.ui-slider-horizontal .ui-slider-range {
+		top: 0;
+		height: 100%;
+	}
+
+	.ui-slider-horizontal .ui-slider-range-min {
+		left: 0;
+	}
+
+	.ui-slider-horizontal .ui-slider-range-max {
+		right: 0;
+	}
+
+/**************************************************
+*  ---------------------------------------------  *
+*  |           Plus Buttons           |  *
+*  ---------------------------------------------  *
+**************************************************/
+
+	.partexplus,
+	.priceplus,
+	.loantermplus,
+	.partexminus,
+	.priceminus,
+	.loantermminus {
+		margin-left: 10px;
+		height: 22px;
+		width: 22px;
+		text-align: center;
+		line-height: 20px;
+		font-size: 20px;
+		background: #dc002e;
+		color: #FFF;
+		cursor: pointer;
+		/*border-radius: 50%; */
+		display: inline-block;
+	}
+
+
+/**************************************************
+*  ---------------------------------------------  *
+*  |           Credit Rating Buttons           |  *
+*  ---------------------------------------------  *
+**************************************************/
+
+	.apr-rating {
+		margin-top: 10px;
+	}
+
+
+	.apr-rating li {
+	    display: inline-block;
+	    width: 100%;
+	    height: 30px;
+	    cursor: pointer;
+	    text-align: center;
+	    border-radius: 4px;
+	    font-size: 16px;
+	    line-height: 30px;
+	    margin-right: 5px;
+	    background: #f1f1f1;
+	    border: 1px solid #969696;
+	}
+
+	.apr-rating li span.option {
+		display: block;
+		width: 100%;
+		height: 40px;
+	}
+
+
+
+	.apr-rating li.calcbad.selected,
+	.apr-rating li.calcbad:hover {
+		background: #dc0028;
+		color: #FFF;
+		border: 1px solid #969696;
+	}
+
+
+
+	.apr-rating li.poor.selected,
+	.apr-rating li.poor:hover {
+		background: #f7891f;
+		color: #FFF;
+		border: 1px solid #969696;
+	}
+
+	.apr-rating li.fair.selected,
+	.apr-rating li.fair:hover {
+		background: #ffd300;
+		border: 1px solid #969696;
+		color: #FFF;
+	}
+
+	.apr-rating li.calcgood.selected,
+	.apr-rating li.calcgood:hover {
+		background: #7dc242;
+		border: 1px solid #969696;
+		color: #FFF;
+	}
+
+	.apr-rating li.exc.selected,
+	.apr-rating li.exc:hover {
+		background: #66961e;
+		border: 1px solid #969696;
+		color: #FFF;
+	}
+
+/**************************************************
+*  ---------------------------------------------  *
+*  |              Display Results              |  *
+*  ---------------------------------------------  *
+**************************************************/
+
+	.display-results {
+		width: 100%;
+		padding: 0;
+		font-size: 15px;
+		color: #FFF;
+	}
+
+	.display-results .right-block {
+		display: block;
+		text-align: right;
+	}
+
+	#apr-rate,
+	#payable,
+	#creditcost {
+		font-size: 26px;
+		line-height: 26px;
+	}
+
+	#result-apr,
+	#result-repayments,
+	#result-total {
+		border-bottom: 1px solid #999;
+		padding: 10px;
+	}
+
+	#result-monthly {
+		margin: 20px auto;
+		background: #dc002e;
+		padding: 5%;
+		border-radius: 5px;
+		color: #fff;
+		position: relative;
+	}
+
+	#installments {
+		font-size: 34px;
+	}
+
+
+/**************************************************
+*  ---------------------------------------------  *
+*  |              Media Queries                |  *
+*  ---------------------------------------------  *
+**************************************************/
+
+
+/* ipad landscape */
+@media all and (min-width: 768px) {
+
+		.calc-area .ui-widget-content {
+			display:block;
+		}
+
+       .apr-rating li {
+		width: 18.5%;
+		height: 40px;
+		font-size: 18px;
+		line-height: 40px;
+	}
+}
+
+/* ipad portrate */
+@media all and (min-width: 992px) {
+   
+    .finance-calc-area,
+	.finance-calc-results {
+		height: 460px;
+	} 
+
+	#finance-calc h2 {
+		font-size: 2em;
+	    font-weight: bold;
+	    margin: 0;
+	}
+
+	#finance-calc h5 {
+		font-size: 1.125em;
+	    font-weight: bold;
+	    margin: 20px 0 5px 0;
+	}
+
+	#finance-calc .finance-calc-results h3 {
+		font-size: 2em;
+		font-weight: bold;
+		
+	}
+
+	#finance-calc .finance-calc-results h5 {
+		font-size: 1.125em;
+		margin: 0px 0 5px 0;
+	}
+
+	.calc-area .ui-widget-content {
+		width: 65%;
+	}
+	
+}
+
+@media all and (min-width: 1110px) {
+
+		#finance-calc h2 {
+		font-size: 2.25em;
+	    font-weight: bold;
+	    margin: 0;
+	}
+
+	#finance-calc h5 {
+		font-size: 1.125em;
+	    font-weight: bold;
+	    margin: 20px 0 5px 0;
+	}
+
+	#finance-calc .finance-calc-results h3 {
+		font-size: 2.25em;
+		font-weight: bold;
+		
+	}
+
+	#finance-calc .finance-calc-results h5 {
+		font-size: 1.125em;
+		margin: 0px 0 5px 0;
+	}
+
+	.apr-rating li {
+		width: 18.8%;
+	}
+
+	.calc-area .ui-widget-content {
+		width: 69%;
+	}
+}
+
+
+
+
+/**************************************************
+*  ---------------------------------------------  *
+*  |          Peugeot/Reading Styles           |  *
+*  ---------------------------------------------  *
+**************************************************/
+
+
+	.finance-calc-results {
+		background: #142032;
+	}
+
+	.ui-slider .ui-slider-handle {
+		background: #068fef;
+	}
+
+	.partexplus,
+	.priceplus,
+	.loantermplus,
+	.partexminus,
+	.priceminus,
+	.loantermminus {
+		background: #068fef;
+	}
+
+	#result-monthly {
+		background: #068fef;
+	}
+
+/**************************************************
+*  ---------------------------------------------  *
+*  |                DS Styles                  |  *
+*  ---------------------------------------------  *
+**************************************************/
+
+	.ui-slider .ui-slider-handle {
+		background: #AD0040;
+	}
+
+	.partexplus,
+	.priceplus,
+	.loantermplus,
+	.partexminus,
+	.priceminus,
+	.loantermminus {
+		background: #AD0040;
+	}
+
+	#result-monthly {
+		background: #AD0040;
+	}

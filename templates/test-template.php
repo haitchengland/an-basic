@@ -1,0 +1,1 @@
+<pre>This is a test template in the plugin folder</pre>
